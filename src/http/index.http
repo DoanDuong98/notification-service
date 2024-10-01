@@ -1,0 +1,35 @@
+@url=http://localhost:3054/v1/api
+
+# POST {{url}}/notification/send-message
+# content-type: application/json
+# Authorization: ""
+
+# {
+#     "code": "2",
+#     "username": "duong.dv@htigroup.vn",
+#     "message": "Hello"
+# }
+
+POST {{url}}/account/connect
+content-type: application/json
+Authorization: Bearer
+
+{
+    "code": "2",
+    "roomId": "!UcAfuTRMafztEtrUxW:htigroup",
+    "username": "duong.dv@htigroup.vn",
+    "message": "!start"
+}
+
+# POST {{url}}/service/register
+# content-type: application/json
+# x-api-key: 
+
+# {
+#     "code": "2",
+#     "apiKey": "syt_aHBvcnRhbC5ib3Q_DJMJnXLdqOUYjwfggmbD_3CNMh3",
+#     "url": "https://matrix.htigroup.vn/_matrix/client/r0/rooms/${roomId}/send/m.room.message",
+#     "name": "Hwork prd"
+# }
+
+
